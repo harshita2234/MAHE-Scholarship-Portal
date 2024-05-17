@@ -23,3 +23,9 @@ Driven by a natural curiosity about economic and business dynamics, I am deeply 
 
 ### 3. Charu Yadav
 Fueled by an avid interest in coding and an aptitude for solving complex problems, I navigate the tech landscape with enthusiasm and resolve. My pursuits extend to web development, app development, and data analysis, where I continually refine my skills. Balancing my technical endeavours, I enjoy singing and travelling, activities that broaden my horizons and infuse creativity into my work. My ability to work collaboratively, coupled with my leadership capabilities, enhances my performance in team settings and underscores my meticulousness in solo projects. Driven by passion and expertise, I am committed to delivering excellence in all my professional and personal ventures.
+
+## License
+
+This work is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+![License: CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)
