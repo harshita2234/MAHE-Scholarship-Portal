@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scholarship 17</title>
+    </head>
+    <body>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const form = document.querySelector('form');
+                const button = document.querySelector('button');
+        
+                button.addEventListener('click', function(event) {
+                    event.preventDefault();  // Prevents the form from submitting and the page from reloading
+        
+                    // Fetch the values from the form
+                    const category = document.getElementById('category').value;
+                    const motherTongue = document.getElementById('Mother Tongue').value.toLowerCase();
+        
+                    // Check the eligibility criteria
+                    if (category === 'GENERAL' && motherTongue === 'konkani') {
+                        alert('Eligible for 10% Fee Waiver');
+                    } else {
+                        alert('Not Eligible');
+                    }
+                });
+            });
+        </script>
+        
+        <div class="image">
+            <h1><br> Scholarship for Konkani Speaking Students</h1>
+        </div>
+        <div class="rect">
+            <h2>INSPIRE IGNITE ELEVATE MIND</h2>
+        </div>
+        <div class="placeholder">
+            <div class="form-container">
+                <div class="form-left">
+                    <form>
+                        <label for="category">Category:</label><br>
+                        <select id="category" name="category">
+                            <option value="GENERAL">GENERAL</option>
+                            <option value="Other">Other</option>
+                        </select><br>
+        
+                        <label for="app-number">Application Number:</label><br>
+                        <input type="text" id="app-number" name="app-number"><br>
+        
+                        <label for="program">Program:</label><br>
+                        <select id="program" name="program">
+                            <option value="UG">UG</option>
+                            <option value="PG">PG</option>
+                           
+                        </select><br>
+        
+                        <label for="Mother Tongue">Mother Tongue:</label><br>
+                        <input type="text" id="Mother Tongue" name="Mother Tongue"><br>
+                    </form>
+                </div>
+                <div class="form-right">
+                    <h3>Fill the form to check eligibility</h3>
+                    <button type="submit">
+                        <span class="button-text">Check Eligibility</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="text">
+            MAHE Manipal awards 10 % fee waiver of course fee as scholarship, to candidates admitted to under graduate (UG) and post graduate (PG) programs ONLY, whose mother tongue is Konkani. 
+            <h5>Scholarship Guidelines</h5>
+            <ul>
+                <li>Applicable for Students admitted under GENERAL category only.</li>
+                <li>The candidate is required go through the admission process specified for each program and there are NO preferential/reserved seats for Konkani speaking students.</li>
+            </ul>
+            <h5>Konkani Speaking Merit Scholarship</h5>
+            <ul>
+                <li>The fee waiver is 10 % of the course fee. 
+                    <ul>
+                        <li>Candidates are required to pay the full first year course fee + Rs. 10,000 refundable Caution Deposit at the 
+                            time of Reporting.</li>
+                            <li>The candidate will have to take care of other expenses such as hostel accommodation, food, books etc.</li>
+                    </ul>
+                </li>
+                <li>
+                    Candidates must submit the following documents 
+                    <ul>
+                        <li>Letter from the passing out School Principal / Institute Director certifying that mother tongue is Konkani </li>
+                        <li>Filled up MAHE Scholarship Form 2024 available in the MAHE Manipal Admissions Office </li>
+                    </ul>
+                </li>
+            <li>The excess amount paid (after applying the scholarship) shall be refunded after the commencement of 2nd semester, 
+                only on submission of duly filled Scholarship Application Form 2024 to the Director (Student Affairs) office MAHE.</li>
+            <li>The award of Fee Waiver for the subsequent years will be same as given at the time of admission in the first year.
+                <ul>
+                    <li>Fee Waiver will be extended in the subsequent year only to those students who have cleared all subjects in 
+                        the University Examinations of previous year before the due date for payment of annual course fee.</li>
+                        <li>Students, who are promoted to next year with failures (F) / Incomplete (I) / Detention (DT) grades, will NOT 
+                            be eligible for fee waiver for that academic year.</li>
+                            <li>The fee waiver will be forfeited in the instances of irregularity in attendance, proven charges of indiscipline, 
+                                bringing disrepute to the Department / Institution / University etc.</li>
+                </ul>
+            </li>
+            <li>In case the candidate leaves the course before the course completion (for any reason), he / she MUST reimburse the 
+                total course fee (as per Prospectus 2024) for the years of scholarship utilized, back to MAHE Manipal.</li>
+            </ul>
+        </div>
+        <iframe src="footer11.html" style="width:100%; height:430px; border:none; overflow:hidden;"></iframe>
+    </body>
+</html>

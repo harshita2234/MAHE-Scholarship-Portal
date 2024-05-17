@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scholarship 9</title>
+    </head>
+    <body>
+        <div class="image">
+            <h1>Scholarships for Allied Health Programs at Manipal TATA Medical College (MTMC) Jamshedpur</h1>
+        </div>
+        <div class="rect">
+            <h2>INSPIRE IGNITE ELEVATE MIND</h2>
+        </div>
+        <div class="placeholder">
+            <div class="form-container">
+                <div class="form-left">
+                    <form>
+                        <label for="category">Category:</label><br>
+                        <select id="category" name="category">
+                            <option value="general">General</option>
+                            <option value="other">Others</option>
+                        </select>
+                        <br>
+                        <label for="app-number">Application Number:</label><br>
+                        <input type="text" id="app-number" name="app-number"><br>
+        
+                        <label for="program">Program:</label><br>
+                        <select id="program" name="program">
+                            <option value="Bachelor of Optometry (B. Optom)">Bachelor of Optometry (B. Optom)</option>
+                            <option value="B.Sc. Exercise and Sports Sciences">B.Sc. Exercise and Sports Sciences</option>
+                            <option value="B.Sc. Medical Imaging Technology">B.Sc. Medical Imaging Technology</option>
+                            <option value="B.Sc. Renal Replacement Therapy and Dialysis Technology">B.Sc. Renal Replacement Therapy and Dialysis Technology</option>
+                            <option value="B.Sc. Cardiovascular Technology">B.Sc. Cardiovascular Technology</option>
+                            <option value="B.Sc. Health Information Management">B.Sc. Health Information Management</option>
+                            <option value="B.Sc. Medical Laboratory Technology">B.Sc. Medical Laboratory Technology</option>
+                        </select><br>
+        
+                        <label for="state">Domicile State:</label><br>
+                        <select id="state" name="state">
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="other">other</option>
+                        </select><br>
+                    </form>
+                </div>
+                <div class="form-right">
+                    <h3>Fill the form to check eligibility</h3>
+                    <button type="submit" onclick="check()">
+                        <span class="button-text">Check Eligibility</span>
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="text">
+        
+
+            <li> MAHE Manipal offers scholarship to students admitted to the following Allied Health Programs at Manipal TATA Medical College
+                (MTMC) Jamshedpur</li>
+                <ul><ul><li>Bachelor of Optometry (B. Optom)</li>
+                    <li> B.Sc. Cardiovascular Technology</li>
+                   <li> B.Sc. Exercise and Sports Sciences</li> 
+                    <li>B.Sc. Health Information Management</li>
+                    <li>B.Sc. Medical Imaging Technology</li> 
+                    <li>B.Sc. Medical Laboratory Technology</li>
+                    <li>B.Sc. Renal Replacement Therapy and Dialysis Technology</li></ul></ul>
+            <p>Scholarship Guidelines</p>
+            <li> All candidates are required go through the admission process specified for each program</li>
+           
+               <li>All candidates admitted to the above program under GENERAL category, are eligible for 20 % course fee waiver as
+                scholarships, provided they meet the eligibility criteria required at the time of admission</li>
+                <ul><ul><li>Domicile candidates from Arunachal Pradesh, Assam, Jharkhand, Manipur, Meghalaya, Mizoram, Nagaland, 
+                    Tripura and Sikkim, are eligible for additional fee waiver of 15 % as scholarships ie; total fee waiver of 35 % as 
+                    scholarship for the 1st year, only on the production of respective valid domicile certificate</li></ul></ul>
+                <li>Candidates are required to pay the full first year course fee including Refundable Caution Deposit of Rs. 10,000 at the
+                    time of Admission / Reporting.</li>
+                <li>The Scholarship obtained by the candidate is applicable for the entire program duration,starting 1
+                    st year of the program</li>
+                    <ul><ul><li>Domicile candidates from Arunachal Pradesh, Assam, Jharkhand, Manipur, Meghalaya, Mizoram, Nagaland, 
+                        Tripura and Sikkim must clear all the subjects of the preceding semester(s) / year(s) in order to be eligible for 
+                        the additional fee waiver of 15 % (mentioned above) for the 2nd & 3rd years</li>
+                    <li>Scholarship (additional fee waiver of 15 %) will be extended in the subsequent years only to those students
+                        who have cleared all subjects in the University Examinations of previous year before the due date for payment
+                        of annual course fee</li></ul></ul>
+                <li>The scholar will have to take care of other expenses such as hostel accommodation, food, books etc.</li>
+                <ul><ul><li>The scholarships will be forfeited in the instances of irregularity in attendance, proven charges of indiscipline, 
+                    bringing disrepute to the Department / Institution / University etc</li></ul></ul>
+                <li>In case the Scholar category scholar leaves the course before the course completion (for any reason), he / she MUST
+                    reimburse the full Course fee (as per Prospectus 2024) for the years of scholarship utilized, back to MAHE Manipal.</li>
+                
+            </ul>
+        </div>
+        <iframe src="footer11.html" style="width:100%; height:430px; border:none; overflow:hidden;"></iframe>
+        <script>
+            function check(){
+                let category = document.getElementById("category").value;
+                let state = document.getElementById("state").value;
+
+                if(category == "general"){
+                    if(state != "other"){
+                        alert("Yes, you are eligible for 35% scholarship.");
+                    }
+                    else{
+                        alert("Yes, you are eligible for 20% scholarship.");
+                    }
+                }
+                else{
+                    alert("Sorry, you are not eligible for any scholarship." + "\n" + "Please contact: diradm.manipal.edu");
+                }
+            }
+        </script>
+    </body>
+</html>

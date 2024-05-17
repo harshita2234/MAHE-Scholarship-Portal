@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scholarship 19</title>
+    </head>
+    <body>
+        <div class="image">
+            <h1>Scholarship Scheme of Interest Subsidy on Education Loan for MAHE Students</h1>
+        </div>
+        <div class="rect">
+            <h2>INSPIRE IGNITE ELEVATE MIND</h2>
+        </div>
+        <div class="placeholder">
+            <div class="form-container">
+                <div class="form-left">
+                    <form>
+
+                        <label for="app-number">Application Number:</label><br>
+                        <input type="text" id="app-number" name="app-number"><br>
+
+                        <label for="met-rank">MET Rank:</label><br>
+                        <input type="text" id="met-rank" name="met-rank"><br>
+
+                        <label for="program">Program:</label><br>
+                        <select id="program" name="program">
+                            <option>BTech.</option>
+                        </select><br>
+
+                        <label for="college">Institute:</label><br>
+                        <select id="college" name="college">
+                            <option>MIT Manipal</option>
+                        </select><br>
+
+                        <label for="income">Parents Income:</label><br>
+                        <input type="numnber" id="income" name="income"><br>
+
+
+                    </form>
+                </div>
+                <div class="form-right">
+                    <h3>Fill the form to check eligibility</h3>
+                    <button type="submit" onclick="check()">
+                        <span class="button-text">Check Eligibility</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="text">
+            MAHE Manipal offers interest subsidy on education loan as scholarship, to the eligible students who joined various under 
+            graduate (UG) and post graduate (PG) programs offered at MAHE. The scholarship is in the form of providing ‘Interest subsidy’ 
+            by partial reimbursement of the interest on education loan availed by them from banks. This scholarship scheme is applicable 
+            to the following category of students only<br>
+            <ul>
+                <li>Konkani Speaking Students</li>
+                <li>Students who have joined under graduate (UG) Programs (MBBS, BDS, BTech, BPharm) in the Academic Year 
+                    2014 – 15 & onwards, and have been awarded Merit-cum-Means scholarship</li>
+                <li>Students who have joined any under graduate (UG) program under the SAGES scheme in the Academic Year 
+                    2014 – 15 & onwards</li>
+                <li>Employee’s children and / spouse who have joined various UG & PG programs in the Academic Year 2014 – 
+                    15 & onwards, and who have availed scholarship from Manipal Foundation</li>
+            </ul>
+
+           <p><b>Eligibility Guidelines</b><br></p> 
+           • A student can avail the benefit of scholarship under the Scheme during the term of his / her study. <br>
+           • Loan shall be availed from a nationalized / scheduled bank for payment of course fee prescribed for the course. Loan 
+           availed for payment of repeat term (casual term) fee will NOT qualify for the scheme. <br>
+           • The benefits under the Scheme will NOT be extended to students in instances of irregularity in attendance, poor academic 
+           performance, proven charges of indiscipline and failure in the examination. <br>
+           • MAHE reserves the right to prescribe the eligibility norms of academic performance for each course. <br>
+           • The eligible loan for interest subsidy shall be the amount equivalent to the accumulated course fee already paid by the 
+           student to MAHE for the respective academic years. <br>
+           • The fee shall be reduced by the subsidies (if any) provided by MAHE in the form of fee concessions as per Table below:
+           <table>
+            <tr>
+                <th>Annual Income of Parents</th>
+                <th>Interest Subsidy</th>
+            </tr>
+            <tr>
+                <td>Upto Rs. 3 Lakhs </td>
+                <td>100%</td>
+            </tr>
+            <tr>
+                <td>Above Rs. 3 Lakhs, Upto Rs. 5 Lakhs</td>
+                <td>90%</td>
+            </tr>
+            <tr>
+                <td>Above Rs. 5 Lakhs, Upto 7.5 Lakhs </td>
+                <td>75%</td>
+            </tr>
+            <tr>
+                <td>Above Rs. 7.5 Lakhs, Upto 10 Lakhs</td>
+                <td>50%</td>
+            </tr>
+            <tr>
+                <td>Above Rs. 10 Lakhs, Upto 12.5 Lakhs</td>
+                <td>25%</td>
+            </tr>
+            <tr>
+                <td>Above Rs. 12.5 Lakhs</td>
+                <td>10%</td>
+            </tr>
+           </table>
+
+        </div>
+        <iframe src="footer11.html" style="width:100%; height:430px; border:none; overflow:hidden;"></iframe>  
+        <script>
+            function check(){
+                let income = document.getElementById("income").value;
+                if(income >= 800000){
+                    alert("Eligible.");
+                }else{
+                    alert("Not Eligible.")
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scholarship 15</title>
+    </head>
+    <body>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const form = document.querySelector('form');
+                const button = document.querySelector('button');
+        
+                button.addEventListener('click', function(event) {
+                    event.preventDefault();  // Prevents the form from submitting and the page from reloading
+        
+                    // Fetch the values from the form
+                    const marks = parseFloat(document.getElementById('Marks').value); // Assuming marks is a number
+        
+                    // Define the eligibility checks based on the category and marks
+                    if (marks >= 60 && marks <= 100) {
+                        alert('Waiver of UPTO 75%');
+                    } else {
+                        alert('Not Eligible');
+                    }
+                });
+            });
+        </script>
+        <div class="image">
+            <h1> Merit Scholarship for BTech (Lateral Entry) Students from Manipal Group Polytechnic Institutions</h1>
+        </div>
+        <div class="rect">
+            <h2>INSPIRE IGNITE ELEVATE MIND</h2>
+        </div>
+        <div class="placeholder">
+            <div class="form-container">
+                <div class="form-left">
+                    <form>
+        
+                        <label for="app-number">Application Number:</label><br>
+                        <input type="text" id="app-number" name="app-number"><br>
+        
+                        <label for="institute">Institute:</label><br>
+                        <select id="institute" name="institute">
+                            <option value="1">Dr. TMA Pai Polytechnic, Manipal (under Dr. TMA Pai Foundation)</option>
+                            <option value="2">SNM Polytechnic, Moodabidri (under Academy of General Education)</option>
+                           
+                        </select><br>
+        
+                        <label for="Marks">Marks in Diploma:</label><br>
+                        <input type="text" id="Marks" name="Marks"><br>
+
+                </div>
+                <div class="form-right">
+                    <h3>Fill the form to check eligibility</h3>
+                    <button type="submit">
+                        <span class="button-text">Check Eligibility</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="text">
+            MAHE Manipal awards Merit scholarships for students admitted to Bachelor of Technology (B.Tech) programs offered by 
+            Manipal Institute of Technology (MIT) Manipal, under the Lateral Entry scheme, from the following institutions.
+            <ul>
+                <li>Dr. TMA Pai Polytechnic, Manipal (under Dr. TMA Pai Foundation)</li>
+                <li>SNM Polytechnic, Moodabidri (under Academy of General Education)</li>
+            </ul>
+            <p>Scholarship Guidelines</p>
+            <ul>
+                <li>Eligibility Requirements
+                <ul>
+                    <li>Candidates MUST have studied & completed their 3 years (6 semesters) of Diploma in Engineering from the 
+                        above institutions with min. 60 % aggregate marks.</li>
+                </ul>
+                </li>
+                <li>Merit Scholarship is applicable for the entire program duration, starting 2nd year of the program ie; year of admission.</li> 
+                <li>Bonafide Certificate mentioning the period of study (ALL 3 years / 6 semesters) issued by the College / Institute should 
+                    be produced at the time of admission.</li>
+            </ul>
+            <p>Merit Scholarship</p>
+            <ul>
+                <li>The scholarship involves 75 % waiver of the Course fee payable 
+                    <ul>
+                        <li>Candidates are required to pay the full first year course fee including Refundable Caution Deposit of Rs. 10,000 
+                            at the time of Admission</li>
+                        <li>The scholar will have to take care of other expenses such as hostel accommodation, food, books etc</li>
+                    </ul>
+                </li>
+                <li>Candidates must submit the filled-up Scholarship Form 2024 to the MAHE Admissions Office by within 1 month of class 
+                    commencement
+                    <ul>
+                        <li>After due verification, the list of students eligible for the Merit scholarship will be finalized and MAHE 
+                            Admissions Office will email the MAHE Scholarship Application Form 2024 to the eligible candidates.</li>
+                        <li>The excess fee paid (after applying the scholarship) shall be refunded by within 2 months of class 
+                            commencement, only on submission of duly filled Scholarship Application Form 2024 to the MAHE Manipal 
+                            Admissions office.</li>
+                    </ul>
+                </li>
+                <li>The award of Merit scholarship for the subsequent years will be same as given at the time of admission in the first year
+                <ul>
+                    <li>Scholarship will be extended in the subsequent year only to those students who have cleared all subjects in 
+                        the University Examinations of previous year before the due date for payment of annual course fee</li>
+                    <li>Students, who are promoted to next year with failures (F) / Incomplete (I) / Detention (DT) grades, will NOT 
+                        be eligible for scholarship for that academic year</li>
+                    <li>The scholarships will be forfeited in the instances of irregularity in attendance, proven charges of indiscipline, 
+                        bringing disrepute to the Department / Institution / University etc.</li>
+                </ul>
+                </li> 
+                <li>In case the Merit scholar leaves the course before the course completion (for any reason), he / she MUST reimburse 
+                    the total course fee (as per Prospectus 2024) for the years of scholarship utilized, back to MAHE Manipal.</li>
+            </ul>
+        </div>
+        <iframe src="footer11.html" style="width:100%; height:430px; border:none; overflow:hidden;"></iframe>
+    </body>
+</html>

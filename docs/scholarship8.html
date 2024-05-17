@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scholarship 8</title>
+    </head>
+    <body>
+        <div class="image">
+            <h1>Merit Scholarships for MTech / ME programs</h1>
+        </div>
+        <div class="rect">
+            <h2>INSPIRE IGNITE ELEVATE MIND</h2>
+        </div>
+        <div class="placeholder">
+            <div class="form-container">
+                <div class="form-left">
+                    <form>
+
+                        <label for="category">Category:</label><br>
+                        <select>
+                            <option value="General">General</option>
+                            <option value="Others">Others</option>
+                        </select><br>
+        
+
+                        <label for="app-number">Application Number:</label><br>
+                        <input type="text" id="app-number" name="app-number"><br>
+        
+        
+                        <label for="Name of Institute">Name of Institute:</label><br>
+                        <select id="Name of Institute" name="Name of Institute">
+                            <option value="Manipal Institute of Technology (MIT) Manipal">Manipal Institute of Technology (MIT) Manipal</option>
+                            <option value="Manipal School of Information Sciences (MSIS) Manipal">Manipal School of Information Sciences (MSIS) Manipal</option>
+                        </select><br>
+
+                        <label for="marks">BE/Btech aggregate marks:</label><br>
+                        <input type="number" id="marks" name="BE/Btech aggregate marks" min="1" max="100" step="0.01" required>
+                        <br>
+
+                        <label for="MET Rank">MET Rank :</label><br>
+                        <input type="number" id="MET Rank" name="MET Rank" min="1" max="500000" required>
+                        <br>
+        
+                    </form>
+                </div>
+                <div class="form-right">
+                    <h3>Fill the form to check eligibility</h3>
+                    <button type="submit" onclick="check()">
+                        <span class="button-text">Check Eligibility</span>
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="text">
+        
+            <p>Scholarship Guidelines</p>
+            <li> Minimum Eligibility Requirements</li>
+            <ul><ul>
+                <li>Pass in BE / BTech in a relevant branch from a recognized University, with minimum 50 % aggregate marks or
+                    equivalent</li>
+                <li>The candidate MUST be having the Manipal Entrance Test (MET) Rank for MTech / ME program</li>    
+            </ul></ul>
+
+            
+          
+               <li>The scholarship involves a 20 % waiver of the Course fee for the candidates admitted to the program under the
+                GENERAL category</li>
+                <ul> <ul>
+                        <li>Candidates are required to pay the full first year course fee including refundable Caution Deposit of Rs. 10,000
+                        before the deadline specified for payment of full first year fee.</li>
+                        <li>The Candidates admitted under this category will have to take care of other expenses such as hostel 
+                        accommodation, food, books etc</li></ul></ul>
+
+                <li>The excess fee paid (after applying the scholarship) shall be refunded after the Class commencement</li>
+                <li>The award of scholarship for the subsequent years will be same, as awarded during year 1.</li>
+                <li>Continuation of scholarship for subsequent years, will be based on academic performance of the students at the 
+                    University examinations preceding the due date for payment of fee / dues i.e. Minimum CGPA of 7 in a 10-point grading 
+                    system
+                    <ul><ul>
+                        <li>Students, who are promoted to next year with less than 7 CGPA, are NOT eligible for scholarship and MUST
+                            pay the full Course Fee applicable for that academic year</li>
+                        <li>Students, who are promoted to next year with failures (F) / Incomplete (I) / Detention (DT) grades, are NOT
+                            eligible for scholarship and MUST pay the full Course Fee applicable for that academic year</li>
+                        <li>Scholarships will be forfeited in the instances of irregularity in attendance, proven charges of indiscipline, 
+                            bringing disrepute to the Department / Institution / University etc</li>        
+                    </ul></ul>
+                    </li>
+                <li>In case the student leaves the course before the course completion (for any reason), he / she MUST reimburse the full
+                    Course fee (as per Prospectus 2024) for the years of scholarship utilized, back to MAHE Manipal</li>
+                    <li>Note
+                        Students enrolled in the program under WILP are not eligible for this scholarship
+                        The scholarship is applicable for the fee payable towards the Course Fee for MAHE Manipal
+                        </li>
+              
+                </ul>
+            </div>
+            <iframe src="footer11.html" style="width:100%; height:430px; border:none; overflow:hidden;"></iframe>
+            <script>
+                function check(){
+                    let marks = document.getElementById("marks").value;
+                    if(marks >= 50){
+                        alert("Yes, you are eligible." + "\n" + "Please contact: diradm.manipal.edu");
+                    }
+                    else{
+                        alert("Sorry, you are not eligible." + "\n" + "Please contact: diradm.manipal.edu")
+                    }
+                }
+            </script>
+    </body>
+</html>

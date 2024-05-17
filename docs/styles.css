@@ -1,0 +1,242 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.image {
+    height: 263px;
+    background-image: url('image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    text-align: center;
+    line-height: normal;
+}
+
+.rect {
+    background: #E8580C;
+    height: 45px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 7.5px 0;
+}
+
+.placeholder {
+    background: #FFF;
+    box-shadow: 2px 2px 13px 0px rgba(0, 0, 0, 0.25);
+    width: 1000px;
+    min-height: 500px; /* Use min-height instead of fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures spacing is distributed from top to bottom */
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px; /* Ensures at least 50px space at the bottom */
+}
+
+h3 {
+    width: 350px;
+    color: #E8580C;
+    text-align: center;
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 138px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: 78px;
+}
+
+.text {
+    color: #000;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    margin: auto;
+    width: 1152px;
+    padding-top: 60px;
+}
+
+button {
+    width: 150px;
+    height: 45px;
+    border-radius: 5px;
+    background: #E8580C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    margin-top: 37px;
+    margin-right: 178px;
+    margin-left: auto;
+}
+
+.button-text {
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 16.5px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-container .form-left {
+    flex: 1;
+    padding-left: 78px;
+    padding-top: 85px;
+    margin: auto;
+}
+
+.form-container .form-right {
+    flex: 1;
+    text-align: center;
+}
+
+input[type="text"], select {
+    border-radius: 2px;
+    border: 1.5px solid #000;
+    background: #FFF;
+    width: 350px;
+    height: 40px;
+    flex-shrink: 0;
+    margin-bottom: 16px;
+}
+input[type="number"], select {
+    border-radius: 2px;
+    border: 1.5px solid #000;
+    background: #FFF;
+    width: 350px;
+    height: 40px;
+    flex-shrink: 0;
+    margin-bottom: 16px;
+}
+label {
+    color: #000;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-block: 10px;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #FFE598;
+}
+
+td {
+    width: 20px;
+}
+
+p {
+    color: #E8580C;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+@media only screen and (max-width: 600px) {
+    .image {
+        height: 150px; 
+    }
+
+    h1 {
+        font-size: 24px; /* Adjust headline size for smaller screens */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .placeholder {
+        width: 90%; /* Make placeholder take full width minus a small margin */
+    }
+
+    .form-container {
+        flex-direction: column; /* Stack form elements vertically */
+    }
+
+    .form-left, .form-right {
+        width: 100%; /* Full width for form sections */
+        text-align: left; /* Left align the content */
+    }
+
+    h3 {
+        width: auto; /* Allow h3 to adjust according to the container width */
+        margin: 20px 0; /* Adjust margins around h3 */
+    }
+
+    input[type="text"], input[type="number"], select, label {
+        width: 55%; /* Adjust input width to ensure it fits within the form container */
+        margin: 5px 0;
+        font-size: 15px;
+    }
+
+    button {
+        width: 60%; /* Full-width buttons */
+        margin: 20px auto; /* Center align the button with auto margins */
+        display: flex;
+        justify-content: center;
+    }
+
+    .text {
+        width: auto; /* Allow text block to fill the available space */
+        padding: 15px; /* Padding around text content for better readability */
+    }
+    p, ul, label {
+        font-size: 15px;
+    }
+
+    table {
+        width: 100%; /* Full width tables */
+    }
+
+    th, td {
+        padding: 8px; /* Smaller padding in table cells */
+    }
+}

@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scholarship 12</title>
+    </head>
+    <body>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const form = document.querySelector('form');
+                const button = document.querySelector('button');
+        
+                button.addEventListener('click', function(event) {
+                    event.preventDefault();  // Prevents the form from submitting and the page from reloading
+        
+                    // Fetch the values from the form
+                    const prog = document.getElementById("Name of AGE Institute").value;
+                    const course = document.getElementById("Course").value;
+                    if (course==="others" || prog==="Others"){
+                        alert('Not Eligible');
+                    }
+                    else {
+                        alert('Eligible for Scholarship');
+                    }
+                });
+            });
+        </script>
+        <div class="image">
+            <h1>Scholarship for Students studied in Academy of General Education (AGE) Colleges</h1>
+        </div>
+        <div class="rect">
+            <h2>INSPIRE IGNITE ELEVATE MIND</h2>
+        </div>
+        <div class="placeholder">
+            <div class="form-container">
+                <div class="form-left">
+                    <form>
+                        <label for="app-number">Application Number:</label><br>
+                        <input type="text" id="app-number" name="app-number"><br>
+        
+                        <label for="Course">Course:</label><br>
+                        <select id="Course" name="Course">
+                            <option value="2 years (11th & 12th) of Pre-University course (PUC) for under graduate (UG) courses ">2 years (11th & 12th) of Pre-University course (PUC) for under graduate (UG) courses </option>
+                            <option value="3 years of degree course (all years / semesters) for post graduate (PG) courses ">3 years of degree course (all years / semesters) for post graduate (PG) courses </option>
+                            <option value="others">Others</option>
+                        </select><br>
+        
+                        <label for="Name of AGE Institute">Name of AGE Institute:</label><br>
+                        <select id="Name of AGE Institute" name="Name of AGE Institute">
+                            <option value="Bhandarkar’s Arts and Science College, Kundapura">Bhandarkar’s Arts and Science College, Kundapura</option>
+                            <option value="Madhava Kripa School, Manipal">Madhava Kripa School, Manipal</option>
+                            <option value="Mahatma Gandhi Memorial College, Udupi">Mahatma Gandhi Memorial College, Udupi</option>
+                            <option value="Sri Bhuvanendra College, Karkala">Sri Bhuvanendra College, Karkala</option>
+                            <option value="Sri JCBM College, Shringeri">Sri JCBM College, Shringeri</option>
+                            <option value="Sri Mahaveera College, Moodabidri">Sri Mahaveera College, Moodabidri</option>
+                            <option value="Vijaya College, Mulki">Vijaya College, Mulki</option>
+                            <option value="others">Others</option>
+                        </select><br>
+        
+                    </form>
+                </div>
+                <div class="form-right">
+                    <h3>Fill the form to check eligibility</h3>
+                    <button type="submit">
+                        <span class="button-text">Check Eligibility</span>
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="text">
+        
+            
+              MAHE Manipal awards Academy of General Education (AGE) Scholarships to the students who have studied the following, from 
+                the following Academy of General Education (AGE) institutions
+                <ul><li>2 years (11th & 12th) of Pre-University course (PUC) for under graduate (UG) courses</li>
+                <li>3 years of degree course (all years / semesters) for post graduate (PG) courses</li></ul>
+                <table class="scholarship-table">
+                    <tr class="header">
+                      <th>Academy of General Education (AGE) Institutions</th>
+                    </tr>
+                    <tr>
+                    <td>Bhandarkar’s Arts and Science College, Kundapura</td></tr>
+                    <tr>
+                      <td>Madhava Kripa School, Manipal</td> </tr>
+                    <tr>
+                      <td>Mahatma Gandhi Memorial College, Udupi</td>
+                    </tr>
+                    <tr>
+                        <td>Sri Bhuvanendra College, Karkala</td>
+                    </tr>
+                    <tr><td>Sri JCBM College, Shringeri</td></tr>
+                    <tr><td>Sri Mahaveera College, Moodabidri</td></tr>
+                    <tr><td>Vijaya College, Mulki</td></tr>
+                  </table>
+                  <p>Scholarship Guidelines</p>
+                  <li>Scholarship is applicable for the entire program duration, starting 1st year of the program</li>
+                  <li>Bonafide Certificate mentioning the period of study issued by the College / Institute should be produced at the time of 
+                    admission.</li>
+
+                   <p>AGE Scholarship</p>
+                   <li>Applicable for Students admitted under GENERAL category only</li>
+                   <li>Students who take admission under SAGES category with SAGES scholarship benefit are NOT eligible for AGE
+                    scholarship</li>
+                    <ul><ul><li>Students who take admission under SAGES category without SAGES scholarship benefit are eligible for AGE
+                        scholarship</li></ul></ul>
+                    <li>The Scholarship involves 10 % waiver of the Course fee payable and is applicable for the entire program duration,
+                        starting 1st year of the program</li>
+                    <ul><ul><li>Candidates are required to pay the full first year course fee including Refundable Caution Deposit of Rs. 10,000
+                        at the time of Admission</li>
+                    <li>The scholar will have to take care of other expenses such as hostel accommodation, food, books etc</li></ul></ul>
+                    <li>After due verification, the list of students eligible for SAGES scholarship will be finalized and MAHE Admissions Office
+                        will email the MAHE Scholarship Application Form 2024 to the eligible candidates.</li>
+                        <li>The excess fee paid (after applying the scholarship) shall be refunded by within 2 months of class commencement, only
+                            on submission of duly filled Scholarship Application Form 2024 to the MAHE Manipal Admissions office.</li>
+                         <li>The award of AGE scholarship for the subsequent years will be same as given at the time of admission</li>
+                         <ul><ul><li>Scholarship will be extended in the subsequent years only to those students who have cleared all subjects in
+                            the University Examinations of previous year before the due date for payment of annual course fee</li>
+                        <li>Students, who are promoted to next year with failures (F) / Incomplete (I) / Detention (DT) grades, will NOT
+                            be eligible for scholarship for that academic year</li>
+                        <li>The scholarships will be forfeited in the instances of irregularity in attendance, proven charges of indiscipline, 
+                            bringing disrepute to the Department / Institution / University etc</li></ul></ul> 
+                      <li>In case the SAGES scholar leaves the course before the course completion (for any reason), he / she MUST reimburse
+                        the total course fee (as per Prospectus 2024) for the years of scholarship utilized, back to MAHE Manipal
+                        </li>            
+
+            </ul>
+        </div>
+        <iframe src="footer11.html" style="width:100%; height:430px; border:none; overflow:hidden;"></iframe>
+    </body>
+</html>

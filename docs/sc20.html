@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scholarship 20</title>
+    </head>
+    <body>
+        <div class="image">
+            <h1>AICTE TFW (for BTech) and PG Scholarships</h1>
+        </div>
+        <div class="rect">
+            <h2>INSPIRE IGNITE ELEVATE MIND</h2>
+        </div>
+        <div class="placeholder">
+            <div class="form-container">
+                <div class="form-left">
+                    <form>
+
+                        <label for="app-number">Application Number:</label><br>
+                        <input type="text" id="app-number" name="app-number"><br>
+
+                        <label for="met-rank">MET Rank:</label><br>
+                        <input type="text" id="met-rank" name="met-rank"><br>
+
+                        <label for="program">Program:</label><br>
+                        <select id="program" name="program">
+                            <option>BTech.</option>
+                        </select><br>
+
+                        <label for="college">Institute:</label><br>
+                        <select id="college" name="college">
+                            <option>MIT Manipal</option>
+                        </select><br>
+
+                        <label for="income">Parents Income:</label><br>
+                        <input type="numnber" id="income" name="income"><br>
+
+
+                    </form>
+                </div>
+                <div class="form-right">
+                    <h3>Fill the form to check eligibility</h3>
+                    <button type="submit" onclick="check()">
+                        <span class="button-text">Check Eligibility</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="text">
+            All India Council for Technical Education (AICTE) New Delhi awards scholarships for deserving & meritorious students.
+            <p><b>AICTE Tuition Fee Waiver (TFW) Scheme for Bachelor of Technology (B.Tech) Students</b><br></p>
+            AICTE has introduced the scheme on tuition fee (course fees include tuition and other fees) waiver for economically weaker 
+            students, enrolled to the B.Tech program at Manipal Institute of Technology (MIT) Manipal and Bengaluru campuses.<br>
+
+           <p><b>AICTE Tuition Fee Waiver (TFW) Guidelines</b><br></p> 
+        <ul>
+            <li>The proposed scheme will be applicable only to the students with parents’ annual income (from all sources) less than 
+                Rs. 8 lakhs (or as specified by AICTE) for the Assessment year 2024 - 25 </li>
+            <li>AICTE TFW seats will NOT exceed 5% of the General intake for each branch.</li>
+            <li>Candidates with MET 2024 rank will be communicated separately regarding the process of applying for AICTE TFW 
+                scheme.</li>
+            <li>At the time of application submission, following documents MUST be submitted
+                <ul>
+                    <li> Candidate’s parents (Mother & Father) self-attested photocopy of the Income Tax (IT) return form for 
+                        Assessment Year 2024 - 25 for proof of parents’ income. Once submitted, revised Income Tax (IT) returns will 
+                        NOT be accepted under ANY circumstances.
+                    <ul>
+                        <li>If the parent(s) are working abroad, they shall submit the following 
+                            <ul>
+                                <li>Copy of the 12 month’s salary slip (April 2023 to March 2024)  </li>
+                                <li>Copy of Passport</li>
+                                <li>Copy of Employment Visa</li>
+                            </ul>
+                        </li>
+                       
+                    </ul></li>
+                </ul>
+            </li>
+            <li>After due verification, the list of students eligible for AICTE TFW will be communicated to all the candidates via email 
+                for participation in online counseling 
+                o On seat allotment in any round, candidates are expected to confirm the allotted seat within the timeline by 
+                paying the stipulated fee</li>
+        </ul>
+
+        <p><b>AICTE Post Graduate (PG) Scholarships</b></p>
+        AICTE awards scholarship for students enrolled in the Master of Technology (M. Tech) and Master of Pharmacy (M. Pharm) 
+        programs
+        <ul>
+            <li><b>Master of Technology (M.Tech)</b><br>In pursuance of the policy framework for promotion of Post Graduate (PG) education and research in Engineering & 
+                Technology of MHRD, AICTE provides financial assistance to the Graduate Aptitude Test in Engineering (GATE) qualified 
+                students, enrolled for the M.Tech program offered by Manipal Institute of Technology (MIT) Manipal.</li>
+            <li><b>Master of Pharmacy (M.Pharm)</b><br>In pursuance of the policy framework for promotion of Post Graduate (PG) education and research in Engineering & 
+                Technology of MHRD, AICTE provides financial assistance to the Graduate Pharmacy Aptitude Test (GPAT) qualified 
+                students, enrolled for the M.Pharm program offered by Manipal College of Pharmaceutical Sciences (MCOPS) Manipal.</li>
+        </ul>
+
+        </div>
+        <iframe src="footer11.html" style="width:100%; height:430px; border:none; overflow:hidden;"></iframe>          
+        <script>
+            function check(){
+                let income = document.getElementById("income").value;
+                if(income >= 800000){
+                    alert("Eligible.");
+                }else{
+                    alert("Not Eligible.")
+                }
+            }
+        </script>
+    </body>
+</html>

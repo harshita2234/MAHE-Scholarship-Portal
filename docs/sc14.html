@@ -1,0 +1,152 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scholarship 14</title>
+    </head>
+    <body>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const form = document.querySelector('form');
+                const button = document.querySelector('button');
+        
+                button.addEventListener('click', function(event) {
+                    event.preventDefault();  // Prevents the form from submitting and the page from reloading
+        
+                    // Fetch the values from the form
+                    const category = document.getElementById('category').value;
+                    const marks = parseFloat(document.getElementById('Marks').value);
+                    const rank = parseFloat(document.getElementById('met-rank').value);
+        
+                    // Check the eligibility criteria
+                    if (category === 'GENERAL' && marks >= 70 && marks <= 100 && rank >= 1 && rank <= 1500  ) {
+                        alert('Waiver of UPTO 75%');
+                    } else {
+                        alert('Not Eligible');
+                    }
+                });
+            });
+        </script>
+        <div class="image">
+            <h1>Manipal Foundation - MAHE Scholarships</h1>
+        </div>
+        <div class="rect">
+            <h2>INSPIRE IGNITE ELEVATE MIND</h2>
+        </div>
+        <div class="placeholder">
+            <div class="form-container">
+                <div class="form-left">
+                    <form>
+                        
+                        <label for="category">Category:</label><br>
+                        <select id="category" name="category">
+                            <option value="GENERAL">GENERAL</option>
+                            <option value="Other">Other</option>
+                        </select><br>
+
+                        <label for="app-number">Application Number:</label><br>
+                        <input type="text" id="app-number" name="app-number"><br>
+
+                        <label for="met-rank">MET Rank:</label><br>
+                        <input type="text" id="met-rank" name="met-rank"><br>
+
+                        <label for="program">Program:</label><br>
+                        <select id="program" name="program">
+                            <option>UG Allied Health Sciences</option>
+                            <option>B.Sc.Nursing</option>
+                            <option>DPharm</option>
+                            <option>BPharm</option>
+                        </select><br>
+
+                        <label for="Marks">Marks in 12th Grade (Karnataka Board):</label><br>
+                        <input type="text" id="Marks" name="Marks"><br>
+
+                    </form>
+                </div>
+                <div class="form-right">
+                    <h3>Fill the form to check eligibility</h3>
+                    <button type="submit">
+                        <span class="button-text">Check Eligibility</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="text">
+            <b>Manipal Foundation </b>and<b> MAHE </b>Manipal awards Manipal Foundation - MAHE Scholarships to students who have undergone the 
+            Scholar Program supported  by Manipal Foundation and admitted in the following programs 
+            <ul>
+                <li><b>UG Allied Health Sciences</b></li>
+		        <li><b>B.Sc.Nursing</b></li>
+                <li><b>DPharm</b></li>
+                <li><b>BPharm</b></li>
+            </ul>
+            <p>Scholarship Guidelines:</p>
+        <ul>
+            <li>This scholarship is open to students from all PU colleges other than those founded/supported /managed by The 
+                Academy of General Education (AGE) Manipal / Dr. TMA Pai Foundation institutions.</li>
+            <li>Those students who have attended the full 2 years (11th and 12 grade) “Scholar program” rendered by Manipal 
+                Foundation through its partners.</li>
+            <li>Top 25 students in the Karnataka PU Boards examinations based on the Selection criteria i.e. (Physics + Chemistry + 
+                Biology) are eligible for this scholarship.</li>
+            <li>The  students who wish to avail the scholarship must apply under the<b>GENERAL</b>category.</li>
+            <li>Admission will be done as per the admission criteria mentioned for the respective program by MAHE.<b>There are NO 
+                preferential seats.</b></li>
+            <li>Scholarship is available for the entire program duration, starting from the year of admission.</li>
+            <li>Minimum Eligibility Requirements
+            <ul>
+                <li>For the Under Graduate (UG) and Diploma program: 70 % aggregate (as per admission criteria) in 12th standard 
+                    Board exam of the Karnataka State Board</li>
+                <li>A certificate from Manipal Foundation stating that the student was a Bonafede student of the Scholar Program 
+                    for both the 11th and 12th standards and should have a minimum of  75% attendance while pursing the  Scholar 
+                    Program.</li>
+            </ul>
+            </li>
+        </ul>
+            <table>
+                <tr>
+                    <th>Scholarship</th>
+                    <th>UG Allied Health Sciences, B.Sc. Nursing, DPharm, BPharm</th>
+                </tr>
+                <tr>
+                    <td>75% Fee Wavier</td>
+                    <td>MET Rank 1 – 1,500</td>
+                </tr>
+            </table>
+        <p>MF MAHE Scholarship:</p>
+        <ul>
+            <li>The Scholarship involves 75 % waiver of the Course fee payable and is applicable for the entire program duration, 
+                starting from the year of admission.
+                <ul>
+                    <li>Candidates are required to pay the full first year course fee including refundable Caution Deposit of Rs. 10,000 
+                        at the time of Admission / Reporting.</li>
+                    <li>The scholar will have to take care of other expenses such as hostel accommodation, food, books etc.</li>
+                </ul>
+            </li>
+            <li>Manipal Foundation will submit a list of students who have attended the Scholar Program along with other details like 
+                marks scored in grades 11 and 12 with special reference to Physics, Chemistry and Biology, attendance tracking in the 
+                scholar program and a certificate of attendance from Manipal Foundation.</li>
+            <li>After due verification, the list of students eligible for this scholarship will be finalized and MAHE Admissions Office will 
+                email the MAHE Scholarship Application Form 2024 to the eligible candidates marking Manipal Foundation for their 
+                information.</li>
+            <li>The excess fee paid (after applying the scholarship) shall be refunded by within 2 months of class commencement, only 
+                on submission of duly filled Scholarship Application Form 2024 to the MAHE Manipal Admissions office.</li>
+            <li>The award of MF MAHE scholarship for the subsequent years will be same as given at the time of admission
+                <ul>
+                    <li>Scholarship will be extended in the subsequent years only to those students who have cleared all subjects in 
+                        the University Examinations of previous year before the due date for payment of annual course fee.</li>
+                    <li>Students, who are promoted to next year with failures (F) / Incomplete (I) / Detention (DT) grades, will<b>NOT</b> 
+                        be eligible for scholarship for that academic year.</li>
+                    <li>The scholarships will be forfeited in the instances of irregularity in attendance, proven charges of indiscipline, 
+                        bringing disrepute to the Department / Institution / University etc.</li>
+                </ul>
+        </ul>
+        In case the MF MAHE scholar leaves the course before the course completion (for any reason), he / she <b>MUST</b> reimburse 
+the total course fee (as per Prospectus 2024) for the years of scholarship utilized, back to MAHE Manipal 
+        </div>
+        <iframe src="footer11.html" style="width:100%; height:430px; border:none; overflow:hidden;"></iframe>
+    </body>
+</html>

@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scholarship 16</title>
+    </head>
+    <body>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const form = document.querySelector('form');
+                const button = document.querySelector('button');
+        
+                button.addEventListener('click', function(event) {
+                    event.preventDefault();  // Prevents the form from submitting and the page from reloading
+        
+                    // Fetch the values from the form
+                    const category = document.getElementById('category').value;
+                    const marks = parseFloat(document.getElementById('Marks').value); // Assuming marks is a number
+        
+                    // Define the eligibility checks based on the category and marks
+                    if (category === 'Scholar' && marks >= 90 && marks < 100) {
+                        alert('Scholarship of 15%');
+                    } else if (category === 'Scholar' && marks >= 75 && marks < 90) {
+                        alert('Scholarship of 10%');
+                    } else if (category === 'Achiever' && marks >= 75 && marks <= 100) {
+                        alert('Scholarship of 10%');
+                    } else {
+                        alert('Not Eligible');
+                    }
+                });
+            });
+        </script>
+        
+        <div class="image">
+            <h1><br>Merit Scholarships for International Students</h1>
+        </div>
+        <div class="rect">
+            <h2>INSPIRE IGNITE ELEVATE MIND</h2>
+        </div>
+        <div class="placeholder">
+            <div class="form-container">
+                <div class="form-left">
+                    <form>
+        
+                        <label for="met-app-number">Application Number:</label><br>
+                        <input type="text" id="met-app-number" name="app-number"><br>
+                    
+                        <label for="category">Category:</label><br>
+                        <select id="category" name="category">
+                            <option value="Achiever">Achiever</option>
+                            <option value="Scholar">Scholar</option>
+                        </select><br>
+                        
+                        <label for="nationality">Nationality:</label><br>
+                        <select id="nationality" name="nationality">
+                            <option value="International ">International</option>
+                            <option value="Indian (NRI)">Indian (NRI)</option>
+                            <option value="Indian (NRI Sponsored)">Indian (NRI Sponsored)</option>
+                        </select><br>
+
+                        <label for="program">Program:</label><br>
+                        <select id="program" name="program">
+                            <option value="UG">UG</option>
+                            <option value="PG">PG</option>
+                        </select><br>
+        
+                        <label for="Marks">Marks in 12th or UG:</label><br>
+                        <input type="text" id="Marks" name="Marks"><br>
+
+                    </form>
+                </div>
+                <div class="form-right">
+                    <h3>Fill the form to check eligibility</h3>
+                    <button type="submit">
+                        <span class="button-text">Check Eligibility</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="text">
+            <i>(except for UG / PG / SS, Medical / Dental, TAPMI programs)</i><br><br>
+
+            MAHE Manipal awards Scholar and Achiever scholarships to International / Indian nationals students admitted to Under 
+            Graduate (UG) and Post Graduate (PG) programs under the Foreign / NRI / NRI Sponsored category 
+            <br>
+            <h5>Scholarship Guidelines</h5>
+            <ul>
+                <li>Eligibility Requirements
+                    <ul>
+                        <li>Under Graduate (UG) program: 75 % aggregate or equivalent (as per Selection criteria) in 12th</li>
+                        <li>Post Graduate (PG) program: 75 % aggregate or equivalent in Under Graduate (UG)</li>
+                    </ul>
+                    </li>
+                <li>Scholarship is applicable for all students who meet the eligibility requirements for the entire program duration, starting 
+                    1st year of the program
+                    <ul>
+                        <li><b>Scholar</b>category Scholarships for all students who meet the above eligibility requirements and is applicable 
+                            for the entire program duration, starting 1st year of the program </li>
+                        <li><b>Achiever</b>Scholarship is applicable at the beginning of 2nd year, 3rd year, 4th year and 5th year based on the 
+                            <b>annual academic performance</b>in the immediate previous year i.e. 1st year, 2nd year, 3rd year and 4th year 
+                            depending on the Program duration.</li>
+                    </ul>
+                </li>
+                <li>The scholarship is determined as below</li>
+                <img src="s16image.png" alt="Table 16" style="height:250px;">
+            </ul>
+
+            
+            <ul>
+                <li>Scholarships will be offered to the 15 candidates with topmost MET rank who complete the Admission formalities in 
+                    the first round of Admission process </li>
+                <li>Minimum Eligibility Requirements
+                    <ul><li>80 % in Physics + Chemistry + Biology taken together, in 12th from a recognised Board </li></ul>
+                </li>Scholarship is applicable for the entire program duration, starting 1st year of the program</li>
+                <li>The scholarship involves 50 % waiver of the Course fee 
+                    <ul>
+                        <li>Candidates are required to pay the full first year course fee including refundable Caution Deposit of Rs. 10,000 
+                            before the deadline specified for payment of full first year fee. </li>
+                        <li>The Candidates admitted under this category will have to take care of other expenses such as hostel 
+                            accommodation, food, books etc </li>
+                    </ul>
+                </li>
+                <li>Scholarships will be offered to the 15 candidates with topmost MET rank who complete the Admission formalities in 
+                    the first round of Admission process 
+                <ul>
+                    <li>After due verification, the list of students eligible for the scholarship will be finalized and MAHE Admissions 
+                        Office will email the MAHE Scholarship Application Form 2024 to the eligible candidates</li>
+                    <li>The excess fee paid (after applying the scholarship) shall be refunded by within 2 months of class 
+                        commencement, only on submission of duly filled Scholarship Application Form 2024 to the MAHE Manipal 
+                        Admissions office. </li>
+                </ul></li>
+                <li>The award of scholarship for the subsequent years will be same as given at the time of admission in the first year.</li>
+                <li>Continuation of scholarship for subsequent years, will be based on academic performance of the students at the 
+                    University examinations preceding the due date for payment of fee / dues i.e. Minimum CGPA of 7.5 in a 10-point 
+                    grading system
+                <ul>
+                    <li>Scholars, who are promoted to next year with less than 7.5 CGPA, are NOT eligible for scholarship and MUST 
+                        pay the full Course Fee applicable for that academic year </li>
+                        <li>Scholars, who are promoted to next year with failures (F) / Incomplete (I) / Detention (DT) grades, are NOT 
+                            eligible for scholarship and MUST pay the full Course Fee applicable for that academic year</li>
+                            <li>Scholarships will be forfeited in the instances of irregularity in attendance, proven charges of indiscipline, 
+                                bringing disrepute to the Department / Institution / University etc </li>
+                </ul> </li>
+                <li>In case the Scholar leaves the course before the course completion (for any reason), he / she MUST reimburse the full 
+                    Course fee (as per Prospectus 2024) for the years of scholarship utilized, back to MAHE Manipal </li>
+            </ul>
+        </div>
+        <iframe src="footer11.html" style="width:100%; height:430px; border:none; overflow:hidden;"></iframe>
+    </body>
+</html>

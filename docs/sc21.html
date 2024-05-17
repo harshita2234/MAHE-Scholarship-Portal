@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scholarship 21</title>
+    </head>
+    <body>
+        <div class="image">
+            <h1>ITC Scholarships</h1>
+        </div>
+        <div class="rect">
+            <h2>INSPIRE IGNITE ELEVATE MIND</h2>
+        </div>
+        <div class="placeholder">
+            <div class="form-container">
+                <div class="form-left">
+                    <form>
+
+                        <label for="app-number">Application Number:</label><br>
+                        <input type="text" id="app-number" name="app-number"><br>
+
+                        <label for="met-rank">MET Rank:</label><br>
+                        <input type="text" id="met-rank" name="met-rank"><br>
+
+                        <label for="program">Program:</label><br>
+                        <select id="program" name="program">
+                            <option>BHM</option>
+                        </select><br>
+
+                        <label for="college">Institute:</label><br>
+                        <select id="college" name="college">
+                            <option>Welcomgroup Graduate School of Hotel Administration (WGSHA)</option>
+                        </select><br>
+
+
+                    </form>
+                </div>
+                <div class="form-right">
+                    <h3>Fill the form to check eligibility</h3>
+                    <button type="submit" onclick="check()">
+                        <span class="button-text">Check Eligibility</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="text">
+            ITC Hotels Ltd has also instituted scholarship worth Rs. 3.5 lakhs to the Bachelor of Hotel Management (BHM) students at Welcomgroup Graduate School of Hotel Administration (WGSHA), excelling in operational subjects and for the best all round graduating students
+        </div><br>
+        <iframe src="footer11.html" style="width:100%; height:430px; border:none; overflow:hidden;"></iframe>
+        <script>
+            function check(){
+                let pg = document.getElementById("program");
+                let col = document.getElementById("college");
+                alert("Eligible.")
+            }
+        </script>
+    </body>
+</html>
