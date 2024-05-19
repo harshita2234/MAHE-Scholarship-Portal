@@ -353,7 +353,16 @@
             </div>
         </div>
         <div id="footer-placeholder"></div>
-        <script src="docs/loadFooter.js"></script>
+        <script>
+            window.addEventListener('DOMContentLoaded', (event) => {
+                fetch('docs/footer.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('footer-placeholder').innerHTML = html;
+                    })
+                    .catch(error => console.error('Error loading the footer:', error));
+            });
+        </script>
         <script>
             function Sc1() {
                 window.location.href = "docs/scholarship1.html";
